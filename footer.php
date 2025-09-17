@@ -91,7 +91,19 @@
 			<!-- /bottom footer -->
 		</footer>
 		<!-- /FOOTER -->
+		<!-- JavaScript for Menu Toggle -->
+		<script>
+			document.addEventListener('DOMContentLoaded', function() {
+				const menuToggle = document.querySelector('.menu-toggle a');
+				const responsiveNav = document.querySelector('#responsive-nav');
 
+				menuToggle.addEventListener('click', function(event) {
+					event.preventDefault(); // Prevent default anchor behavior
+					responsiveNav.classList.toggle('active');
+				});
+			});
+		</script>
+		<!-- /JavaScript for Menu Toggle -->
 		<script>
         	// យកម៉ោងបញ្ចប់ពី PHP
 			const endTime = <?php echo $end_time; ?> * 1000; // PHP timestamp -> milliseconds
@@ -126,4 +138,5 @@
 		<script src="fornend/js/slick.min.js"></script>
 		<script src="fornend/js/nouislider.min.js"></script>
 		<script src="fornend/js/jquery.zoom.min.js"></script>
+
 		<script src="fornend/js/main.js"></script>
