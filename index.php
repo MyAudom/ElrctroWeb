@@ -170,8 +170,8 @@
 					<ul class="main-nav nav navbar-nav">
 						<li class="active"><a href="index.php">Home</a></li>
 						<li><a href="<?php echo cleanUrl('store.php'); ?>">store</a></li>
-						<li><a href="<?php echo cleanUrl('laptop.php'); ?>">Laptops</a></li>
-						<li><a href="<?php echo cleanUrl('smartphones.php'); ?>">Smartphones</a></li>
+						<li><a href="laptop.php">Laptops</a></li>
+						<li><a href="smartphones.php">Smartphones</a></li>
 						<li><a href="camera.php">Cameras</a></li>
 						<li><a href="accessories.php">Accessories</a></li>
 					</ul>
