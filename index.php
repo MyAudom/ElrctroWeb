@@ -169,7 +169,7 @@
 					<!-- NAV -->
 					<ul class="main-nav nav navbar-nav">
 						<li class="active"><a href="index.php">Home</a></li>
-						<li><a href="store.php">store</a></li>
+						<li><a href="/store">store</a></li>
 						<li><a href="laptop.php">Laptops</a></li>
 						<li><a href="smartphones.php">Smartphones</a></li>
 						<li><a href="camera.php">Cameras</a></li>
