@@ -303,7 +303,7 @@ $result = $conn->query($query);
 
                                                     // Display image or placeholder
                                                     if (!empty($image_path) && file_exists($_SERVER['DOCUMENT_ROOT'] . "/image_upload/" . basename($image_path))) {
-                                                        echo "<td><img src='/image_upload/'" . basename($image_path) . "' alt='Product Image' style='width: 100px; height: auto;'></td>";
+                                                        echo "<td><img src='image_upload/'" . basename($image_path) . "' alt='Product Image' style='width: 100px; height: auto;'></td>";
                                                     } else {
                                                         echo "<td>Image not found</td>";
                                                     }
