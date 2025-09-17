@@ -254,9 +254,9 @@ $result = $conn->query($query);
                             ?>
                         </a>
                         <div class="dropdown-menu dropdown-menu-end bg-secondary border-0 rounded-0 rounded-bottom m-0">
-                            <a href="myprofile.php" class="dropdown-item">My Profile</a>
+                            <a href="#" class="dropdown-item">My Profile</a>
                             <a href="#" class="dropdown-item">Settings</a>
-                            <a href="signin.php" class="dropdown-item">Log Out</a>
+                            <a href="#" class="dropdown-item">Log Out</a>
                         </div>
                     </div>
                 </div>
@@ -302,7 +302,7 @@ $result = $conn->query($query);
                                                     echo "<td>$id</td>";
 
                                                     // Display image or placeholder
-                                                    if (!empty($image_path) && file_exists($_SERVER['DOCUMENT_ROOT'] . "/image_upload/" . basename($image_path))) {
+                                                    if (!empty($image_path) && file_exists($_SERVER['DOCUMENT_ROOT'] . "image_upload/" . basename($image_path))) {
                                                         echo "<td><img src='image_upload/'" . basename($image_path) . "' alt='Product Image' style='width: 100px; height: auto;'></td>";
                                                     } else {
                                                         echo "<td>Image not found</td>";
@@ -343,7 +343,7 @@ $result = $conn->query($query);
                                                         if ($image_result->num_rows > 0) {
                                                             $image_row = $image_result->fetch_assoc();
                                                             $image_path = $image_row['image'];
-                                                            $image_full_path = $_SERVER['DOCUMENT_ROOT'] . "/image_upload/" . basename($image_path);
+                                                            $image_full_path = $_SERVER['DOCUMENT_ROOT'] . "image_upload/" . basename($image_path);
 
                                                             // Delete image file if exists
                                                             if (!empty($image_path) && file_exists($image_full_path)) {
