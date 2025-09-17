@@ -343,7 +343,7 @@ $result = $conn->query($query);
                                                         if ($image_result->num_rows > 0) {
                                                             $image_row = $image_result->fetch_assoc();
                                                             $image_path = $image_row['image'];
-                                                            $image_full_path = $_SERVER['DOCUMENT_ROOT'] . "image_upload/" . basename($image_path);
+                                                            $image_full_path = $_SERVER['DOCUMENT_ROOT'] . "/image_upload/" . basename($image_path);
 
                                                             // Delete image file if exists
                                                             if (!empty($image_path) && file_exists($image_full_path)) {
