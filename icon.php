@@ -1,0 +1,1 @@
+<link rel="icon" href="img/icon.ico" type="image/x-icon">
