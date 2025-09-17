@@ -13,4 +13,9 @@ if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
 }
 
+function cleanUrl($page) {
+    return str_replace('.php', '', $page);
+}
+
 ?>
+
