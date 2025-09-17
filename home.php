@@ -294,8 +294,21 @@ include 'head.php'
                         <div class="bg-secondary rounded d-flex align-items-center justify-content-between p-4">
                             <i class="fa fa-chart-pie fa-3x text-primary"></i>
                             <div class="ms-3">
-                                <p class="mb-2">Total Revenue</p>
-                                <h6 class="mb-0">$1234</h6>
+                                <p class="mb-2">Total Products</p>
+                                <h6 class="mb-0">
+                                    <?php
+                                        // Count total products in database
+                                        $product_count_sql = "SELECT COUNT(*) as total_products FROM fornend_database_products";
+                                        $product_count_result = $conn->query($product_count_sql);
+                                        
+                                        if ($product_count_result->num_rows > 0) {
+                                            $row = $product_count_result->fetch_assoc();
+                                            echo $row['total_products'];
+                                        } else {
+                                            echo "0";
+                                        }
+                                    ?>
+                                </h6>
                             </div>
                         </div>
                     </div>
