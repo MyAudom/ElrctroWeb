@@ -1,4 +1,4 @@
-errorDOCUMENT 404 http://localhost:84/Admin/404.php
+errorDOCUMENT 404 https://elrctroweb.pxxl.click/404.php
 
 RewriteEngine on
 RewriteCond %{REQUEST_FILENAME} !-d
